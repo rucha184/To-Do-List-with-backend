@@ -1,0 +1,61 @@
+
+body {
+    background: #eceffd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    max-width: 400px;
+    margin: 60px auto;
+    background: #fff;
+    box-shadow: 0 4px 24px #b5b5da55;
+    border-radius: 16px;
+    padding: 2em 2.5em;
+}
+h1 {
+    color: #5c47a3;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.task {
+    display: flex;
+    align-items: center;
+    background: #f5f5f8;
+    padding: 0.8em;
+    border-radius: 7px;
+    margin-bottom: 0.8em;
+    box-shadow: 0 1px 6px #eee;
+}
+.task.completed {
+    text-decoration: line-through;
+    color: #17b978;
+    background: #e8ffe0;
+}
+.task .desc { flex-grow: 1; }
+.task form, .task a {
+    margin-left: 0.7em;
+}
+form input[type="text"] {
+    width: 68%;
+    padding: 0.6em;
+    border-radius: 5px;
+    border: 1.5px solid #ceb3fa;
+}
+form input[type="submit"], .logout {
+    background: linear-gradient(90deg, #6f47c8, #985efb);
+    color: white;
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+form input[type="submit"]:hover, .logout:hover {
+    background: linear-gradient(90deg, #985efb, #6f47c8);
+}
+.link {
+    color: #985efb;
+    font-size: 0.98em;
+}
+.error { color: #c94c4c; text-align: center; }
+.success { color: #17b978; text-align: center; }
